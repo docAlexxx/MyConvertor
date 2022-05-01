@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerSizesConvert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/containerRecycler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/dimensionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sizes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:id="@+id/dimensionFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DimensFrom"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimensionType"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/dimensionFromValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DimensFromValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimensionFrom"
+            android:layout_margin="10dp"/>
+
+        <EditText
+            android:id="@+id/dimensionToValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DimensToValue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimensionFromValue"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/dimensionTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DimensTo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dimensionToValue" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="30dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="20dp"
+            app:layout_constraintStart_toEndOf="@+id/dimensionFromValue"
+            app:layout_constraintTop_toTopOf="@+id/dimensionFromValue"
+            android:background="@android:drawable/ic_menu_revert"
+           />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/containerSizesConvert">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

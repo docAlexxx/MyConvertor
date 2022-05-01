@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MyConvertor/app/src/main/res/layout/activity_main.xml" value="0.3197463768115942" />
+        <entry key="..\:/Users/Sasha/AndroidStudioProjects/MyConvertor/app/src/main/res/layout/fragment_recycler_item.xml" value="0.3197463768115942" />
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MyConvertor/app/src/main/res/layout/fragment_sizes.xml" value="0.3197463768115942" />
         <entry key="..\:/Users/Sasha/AndroidStudioProjects/MyConvertor/app/src/main/res/menu/convertor_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Sasha/AndroidStudioProjects/MyConvertor/app/src/main/res/menu/fragment_recycler_sizes_item_.xml" value="0.32395833333333335" />
       </map>
     </option>
   </component>
